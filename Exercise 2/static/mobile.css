@@ -1,0 +1,453 @@
+* {
+    font-family: sans-serif;
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Proza Libre', sans-serif; 
+}
+
+nav {
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    background-color: 	#0072bb;
+    color: white;
+}
+
+nav a {
+    margin: 0% 2%;
+    padding: 0%;
+    height: 60px;
+    line-height: 40px;
+    font-size: 5vw;
+    color: white;
+}
+
+nav a h1 {
+    width: 100%;
+}
+
+nav a:hover {
+    transform: scale(1.05);
+    text-decoration: underline;
+    transition-duration: 250ms;
+}
+
+nav input[type="search"] {
+    height: 30px;
+    border-radius: 15px;
+    padding: 0% 2.5%;
+    background-image:url('http://i47.tinypic.com/r02vbq.png');
+    background-repeat:no-repeat;
+    background-position:right center;outline:0;
+}
+
+#navigationBtns, #accountManager {
+    padding-bottom: 1.5%;
+}
+
+
+/* ---Map section--- */
+#groupMap {
+    margin: 10% 0%;
+    width: 100%;
+    overflow-x:hidden;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+#groupMap svg {
+    height: auto;
+    width: 95vw;
+    margin: 0 auto;
+}
+
+.land, .svg {
+    fill: #f0f5f9;
+    fill-opacity: 1;
+    stroke:;
+    stroke-opacity: 1;
+    stroke-width: 2;
+}
+
+#US, #DE, #JP, #JPN1850, #JPN1852, #JPN1860, #DEU1591, #DEU1599, #DEU1574, #CA, #NY {
+    fill: #f0f5f9;
+    stroke: #0072bb;
+    stroke-opacity: 0.4;
+}
+
+#US:hover, #DE:hover, #JP:hover, #JPN1850:hover, #JPN1852:hover, #JPN1860:hover, #DEU1591:hover, #DEU1599:hover, #DEU1574:hover, #CA:hover, #NY:hover {
+    fill: #0072bb;
+    transition-duration: 250ms;
+}
+
+.svgContainer {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+}
+
+
+#searchBar {  
+    position: static;
+    width: 80%;
+    height: 60px;
+    font-size: 1.5em;
+    color: black;
+    opacity: 1;
+    border: 1px solid black;
+    border-radius: 25px;
+    text-align: center;
+    background: transparent;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#searchBar:hover {
+    background: white;
+    border: 2px solid black;
+    transition-duration: 250ms;
+}
+
+#mainContent, #homeContent {
+    width: 100%;
+    margin: 0%;
+    margin-bottom: 10%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;   
+}
+
+#contentHead {
+    font-size: 9vw;
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    margin-bottom: 7.5%;
+    border-bottom: 1px solid black;
+}
+
+.headLink {
+    color: 	#0072bb;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.headLink:hover {
+    color: black;
+    text-decoration: underline;
+    transition-duration: 250ms;
+}
+
+.groupHead {
+    font-size: 10vw;
+    margin: 1.5% 0%;
+    margin-top: 10%;
+}
+
+.groupContainer:nth-child(even) {
+    background-color: whitesmoke;
+}
+
+#mainContent p, #homeContent p {
+    width: 85%;
+    margin: 0%;
+    padding: 5% 7.5%;
+    font-size: 3.5vw;
+    text-align: justify;
+}
+
+.groupContent {
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0% auto;
+    color: white;
+}
+
+.groupContent a {
+    margin: 0%;
+}
+
+.groupItem {
+    width: 100vw;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-size: 10vw;
+    display: table-cell; 
+    vertical-align: middle;
+    background-color: white;
+}
+
+.groupItem h1 {
+    width: 100vw;
+    height: 300px;
+    font-size: 10vw;
+    display: table-cell; 
+    vertical-align: middle;
+}
+
+.groupContent a:hover .groupItem{
+    transform: scale(1.05);
+    filter:drop-shadow(0px 0px 5px black);
+    transition-duration: 250ms;
+}
+
+#group1 {
+    background-image: url('Images/america-ancient-architecture-356844.jpg');
+}
+
+#group2 {
+    background-image: url('Images/architecture-boats-building-547494.jpg');
+}
+#group3 {
+    background-image: url('Images/architecture-building-castle-402028.jpg');
+}
+
+#group1Item1 {
+    background-image: url('Images/america-billboards-broadway-1112109.jpg');  
+}
+
+#group1Item2 {
+    background-image: url('Images/architecture-bridge-fog-1141853.jpg');  
+}
+
+#group1Item3 {
+    background-image: url('Images/architecture-asphalt-avenue-1115866.jpg');
+}
+
+#group2Item1 {
+    background-image: url('Images/architecture-berlin-brandenburg-gate-53146.jpg');  
+}
+
+#group2Item2 {
+    background-image: url('Images/architecture-bavaria-blue-163405.jpg');  
+}
+
+#group2Item3 {
+    background-image: url('Images/architecture-building-central-station-970763.jpg');
+}
+
+#group3Item1 {
+    background-image: url('Images/billboards-buildings-city-34142.jpg');  
+}
+
+#group3Item2 {
+    background-image: url('Images/ancient-architecture-building-161164.jpg');  
+}
+
+#group3Item3 {
+    background-image: url('Images/ancient-asian-architecture-azuchi-momoyama-period-161923.jpg');
+}
+
+
+}
+
+.listContainer {
+    width: 90%;
+    padding: 5%;
+    margin: 0 auto;
+}
+
+.listContainer h2 {
+    background-color: white;
+    padding: 0% 10%;
+    padding-top: 2.5%;
+    margin: 0 auto;
+    font-size: 6vw;
+}
+
+.listContainer ul {
+    background-color: white;
+    padding: 10% 15%;
+    text-align: left;
+    margin: 0 auto;
+    list-style:decimal;
+    font-size: 3.5vw;
+}
+
+.imageSlider {
+    width: 90%;
+    height: 300px;
+    margin: 5% auto;
+    overflow: hidden;
+    background-color: #0072bb;
+}
+
+.imageSlider figure img {
+    width: 33.33%;
+    float: left;
+}
+
+.imageSlider figure {
+    position: relative;
+    width: 300%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 30s imageSlider infinite;
+}
+
+@keyframes imageSlider {
+    0% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    75% {
+        left: -100%;
+    }
+    100% {
+        left: 0%;
+    } 
+}
+
+.detailsCont {
+    width: 100%;
+    display: block;
+}
+
+.detailsCont h2 {
+    color: white;
+}
+
+.mapCont {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.mapCont img {
+    width: 100%;
+}
+
+.mapCont, .cmntCont {
+    width: 75%;
+    margin: 5% auto;
+    background-color: #0072bb;
+    border: 2px solid #0072bb;
+    padding: 5% 7.5%;
+}
+
+.cmntCont h2 {
+    color: white;
+    font-size: 2em;
+}
+
+.cmntCont div {
+    border: 0.5px solid black;
+    margin: 1% 0%;
+    padding: 5%;
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px black;
+}
+
+
+.cmntCont h4 {
+    color: #0072bb;
+    opacity: 0.45;
+}
+
+.commentForm {
+    padding: 5% 0%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.commentForm label {
+    color: white;
+}
+
+.commentForm input {
+    margin-top: 2.5%;
+}
+
+.commentForm input[type="text"] {
+    height: 80px;
+}
+
+.commentForm input[type='submit'] {
+    height: 40px;
+    width: 30%;
+    background-color: white;
+}
+
+.commentForm input[type='submit']:hover {
+    background-color: #0072bb;
+    color: white;
+    border: 3px solid white;
+    transition-duration: 250ms;
+}
+
+#about {
+    height: 60vh;
+    padding: 5% 0%;
+}
+
+#references {
+    width: 100%;
+    padding: 5% 0%;
+}
+
+#references p {
+    padding: 7.5%;
+    text-align: left;
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+    padding: 2% 0%;
+}
+
+footer a {
+    color: white;
+    opacity: 0.9;
+}
+
+footer a:hover {
+    opacity: 0.5;
+}
+
+footer #sitemap {
+    width: 100%;
+    margin: 0% auto;
+    display: inline-flex;
+    justify-content: center;
+    
+}
+
+footer #sitemap div {
+    text-align: left;
+    margin: 0% 2.5%;
+}
+
+footer #sitemap div ul {
+    list-style:none;
+    margin: 7.5% 0%;
+    padding: 0%;
+    
+}
