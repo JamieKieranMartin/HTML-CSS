@@ -1,0 +1,354 @@
+/* UNIVERSAL CSS */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 100;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background-image: url(backgroundimg.jpg) ;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;  
+    
+}
+
+section {
+    margin: 0 15%;
+    background-color: white;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;  
+}
+
+h1 {
+    text-align: center;
+    font-weight: 100;
+    font-family: 'Playfair Display', sans-serif;
+    color: #ffffff;
+    padding: 1% 1%;
+    font-size: 4.5em;
+}
+
+h2, h4 {
+    font-weight: 100;
+    color: #ffffff;
+    font-size: 1.75em;
+    font-family: 'Playfair Display', sans-serif; 
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+p, li {
+    text-align: justify;
+    padding: 2.5%;
+    list-style: none;
+}
+
+.maintext li {
+    list-style: decimal;
+    margin: 2.5% 5%;
+}
+
+.maintext h4 {
+    color: black;
+}
+
+h3, tipsandorigincontainer{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 2em;
+}
+
+.smlnav {
+    height: 10%;
+    background-color: #3f3839;
+    -webkit-box-shadow: 0px 15px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 15px rgba(0,0,0,0.75);
+    box-shadow: 0px 15px rgba(0,0,0,0.75);
+}
+
+nav {
+    display: flex;
+    height: 5%;
+    width: 100%;
+    justify-content: center;
+    vertical-align: middle;
+    align-content:center;
+    align-items: center;
+    
+    
+}
+
+.smlnavbutton {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 2em;
+    padding: 5% 3%;
+    width: 5%;
+}
+
+.navbutton {
+    height: 125%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 2.5em;
+    margin: 0 2%;
+    padding: 0 1%;
+    width: 7.55%;      
+}
+
+.smlnavlogo {
+    font-size: 1em;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: -1.5%;
+    left: 0.5%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#logo {
+    white-space: nowrap;
+    font-size: 1.9em;
+}
+
+.navbutton:hover, .smlnavbutton:hover {
+    transition-duration: 4000;
+    background-color: rgba(255, 255, 255, 0.5); 
+    -webkit-transition: background-color 0.15s ease-in;
+    -moz-transition: background-color 0.15s ease-in; 
+    -o-transition: background-color 0.15s ease-in; 
+    transition: background-color 0.15s ease-in;    
+}
+
+/*Search Bar Would Enable Users to Search Recipes On The Website. Due to no JS, clicking on the searchbar takes you to the Anzac Recipe Page*/
+
+/* HOME PAGE / INDEX CSS */
+
+#searchcontainer {
+    position: fixed;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+input#searchbar {
+    border: 4px solid white;
+    color: white;
+    text-align: center;
+    border-radius: 50px;
+    padding: 0 2.5%;
+    margin: 0%;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 2.5em;
+    font-weight: 100;
+    
+}
+
+input#searchbar:focus {
+    background-color: rgb(255, 255, 255, 0.25);
+    -webkit-transition: background-color 0.5s ease, -webkit-box-shadow 0.25s ease;  
+    -moz-transition: background-color 0.5s ease, -moz-box-shadow 0.25s ease;
+    transition: background-color 0.5s ease, box-shadow 0.25s ease; 
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75) ;
+}
+
+::placeholder {
+    color: #ffffff;
+    opacity: 1;
+}
+
+footer {
+    z-index: 2;
+    bottom: 0%;
+    width: 100%;
+    
+}
+
+#landingfooter {
+    position: absolute;
+}
+
+#otherfooter {
+    position: static;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+}
+
+.clearfooterimg {
+    margin: 2% 0.5%;
+    width: 4%;
+    opacity: 1;
+    filter: invert(100%);
+}
+
+.blackfooterimg {
+    margin: 2.5% 0.5% 2% 0.5%;
+    width: 4%;
+    opacity: 1;
+}
+
+.footercontent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    opacity: 0.75;
+    font-size: 0.75em;
+}
+
+/* RECIPE CSS */
+
+.heading {
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+    padding: 0%;
+    font-size: 2.4em;
+    position: absolute;
+    top: 30%;
+    text-shadow: 0px 1px 10px #0b0706;
+}
+
+.recipeimg {
+    width: 100%;
+}
+
+.recipecontainer {
+    display: inline-flex;
+    margin-top: -0.5%;
+}
+
+.recipeingredients {
+    background-color: #3f3839;
+    color: white;
+}
+.recipetips{
+    padding-top: 4%;
+    padding-bottom: 6%;
+    background-color: #3f3839;
+    color: #ffffff;
+}
+
+.maintext, .recipeingredients {
+    padding: 3% 3%;
+    font-size: 1.25em;
+   
+}
+
+.tips_origincontainer, .commentcontainer {
+    width: 100%;
+    
+}
+
+#ingredients {
+    padding-top: 10%;
+}
+
+.secondhead {
+    padding-top: 2%;
+    text-align: center;
+    font-size: 2em;
+}
+
+.commentcontainer {
+    padding-top: 2%;
+}
+
+.comment {
+    padding: 2.5% 12.5%;
+    
+}
+
+.comment h4 {
+    color: black;
+}
+
+.tip {
+    padding: 2.5% 12.5%;
+    font-size: 1.25em;
+}
+
+.textboxcontainer {
+    padding: 0% 12.5%;
+}
+
+.textbox {
+    margin: 1%;
+    width: 300px;
+    height: 75px;
+    border: 1px solid #3a3635;
+    font-size: 1.1em;
+    vertical-align: text-top;
+}
+
+.commentitem {
+    padding: 0%;
+    color: black;
+    font-size: 1.2em;
+}
+
+.submitbtn {
+    position: absolute;
+    margin: 0.3% 0%;
+    font-size: 1.1em;
+    height: 75px;
+    width: 75px;
+    border: 1px solid #3a3635;
+    background-color: #3a3635;
+    color: white;
+    
+}
+
+/* Origins CSS */
+
+.origins {
+    background-image: url(black-and-white-elderly-happy-160422.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    -moz-box-shadow:    inset  0  15px 15px -15px rgba(0,0,0,0.75), 
+    inset  0 -15px 15px -15px rgba(0,0,0,0.75);
+    -webkit-box-shadow: inset  0  15px 15px -15px rgba(0,0,0,0.75), 
+    inset  0 -15px 15px -15px rgba(0,0,0,0.75);
+    box-shadow:        
+        inset  0  15px 15px -15px rgba(0,0,0,0.75), 
+       inset  0 -15px 15px -15px rgba(0,0,0,0.75);
+}
+
+.originshead {
+    font-size: 2em;
+    color: white;
+}
+
+.originstext {
+    padding: 0% 3%;
+}
+
+.floatimg {
+    margin: 3% 0% 3% 2%;
+    float: right;
+    width: 40%;
+}
